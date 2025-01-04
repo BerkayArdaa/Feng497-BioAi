@@ -91,7 +91,7 @@ if __name__ == "__main__":
         model = train_random_forest(X, y)
 
         # Yangın riski tahminlerini hesapla ve görselleştir
-        fire_ris        k_data = predict_fire_risk_and_visualize(data, [
+        fire_risk_data = predict_fire_risk_and_visualize(data, [
             'BRIGHTNESS', 'Wind Speed (km/h)', 'Fire Spread Speed (km/h)',
             'Affected Area (km²)', 'FRP'
         ], model, label_encoder)
